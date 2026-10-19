@@ -7,44 +7,48 @@
  * @author (You)
  * @version (0.1)
  */
-public class PowerPill
-{
-    public static int DEFAULT_POWER = 10
+public class PowerPill {
+    public static int DEFAULT_POWER = 10;
 
     // instance variables
     private int power;
-    private string name;
+    private String name;
 
     // constructors
-    public PowerPill(String name){
+    public PowerPill(String name) {
         this.name = name;
         this.power = DEFAULT_POWER;
     }
-    public PowerPill(String name){
-        this.name = name
+
+    public PowerPill(String name) {
+        this.name = name;
         this.power = power;
     }
 
 
     // accessor methods
-    public int getPower(){
+    public int getPower() {
         return power;
     }
-   public String getName(){
+
+    public String getName() {
         return name;
-   }
+    }
 
 
     // mutator methods
 
-    public void setPower(int power){
+    public void setPower(int power) {
         this.power = power;
     }
-    public void setName(String name){
+
+    public void setName(String name) {
         this.name = name;
     }
+
     // toString method
-    public String tostring(){
+    public String tostring() {
         return "PowerPill" + name + " = " + power;
 
     }
+}
